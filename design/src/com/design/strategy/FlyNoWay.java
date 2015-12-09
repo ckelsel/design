@@ -17,10 +17,10 @@
  */
 package com.design.strategy;
 
-public class flyWithWing implements flyable {
+public class FlyNoWay implements Flyable {
 
 	public void fly() {
-		System.out.println("flyWithWing");
+		System.out.println("flyNoWay");
 	}
 
 }

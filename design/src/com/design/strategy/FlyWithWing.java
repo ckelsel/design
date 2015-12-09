@@ -17,9 +17,10 @@
  */
 package com.design.strategy;
 
-public class duck {
-	void display() {
-		System.out.println("i am a duck");
+public class FlyWithWing implements Flyable {
 
+	public void fly() {
+		System.out.println("flyWithWing");
 	}
+
 }

@@ -17,10 +17,21 @@
  */
 package com.design.strategy;
 
-public class flyNoWay implements flyable {
+public class GreenDuck extends Duck {
+	Quackable mquack = new QuackSlient();
+	Flyable mfly = new FlyWithWing();
+	
+	public void display() {
+		System.out.println("i am a greenDuck");
 
-	public void fly() {
-		System.out.println("flyNoWay");
 	}
+	
+	public void peformQuack() {
+		mquack.quack();
+	}
+	
 
+	public void peformFly() {
+		mfly.fly();
+	}
 }

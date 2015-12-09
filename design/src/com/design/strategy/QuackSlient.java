@@ -17,7 +17,7 @@
  */
 package com.design.strategy;
 
-public class quackSlient implements quackable {
+public class QuackSlient implements Quackable {
 
 	public void quack() {
 		System.out.println("quackSlient");

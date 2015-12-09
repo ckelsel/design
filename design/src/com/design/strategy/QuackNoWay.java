@@ -17,6 +17,11 @@
  */
 package com.design.strategy;
 
-public interface quackable {
-	void quack();
+public class QuackNoWay implements Quackable {
+
+	public void quack() {
+		System.out.println("quackNoWay");
+
+	}
+
 }

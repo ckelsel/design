@@ -15,9 +15,11 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-
 package com.design.strategy;
 
-public interface flyable {
-	void fly();
+public class Duck {
+	void display() {
+		System.out.println("i am a duck");
+
+	}
 }

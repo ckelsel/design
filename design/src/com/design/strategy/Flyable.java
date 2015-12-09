@@ -15,23 +15,9 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
+
 package com.design.strategy;
 
-public class greenDuck extends duck {
-	quackable mquack = new quackSlient();
-	flyable mfly = new flyWithWing();
-	
-	public void display() {
-		System.out.println("i am a greenDuck");
-
-	}
-	
-	public void peformQuack() {
-		mquack.quack();
-	}
-	
-
-	public void peformFly() {
-		mfly.fly();
-	}
+public interface Flyable {
+	void fly();
 }
