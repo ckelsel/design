@@ -1,0 +1,9 @@
+1.
+we don't need to modify original code, while we use large number of classes
+
+beverage  darkroast    sugar
+          decaf        soy
+          espressl     milk
+          houseblend   mocha
+          
+1         4            4x4       total 21          
