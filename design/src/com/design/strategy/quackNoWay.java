@@ -15,21 +15,13 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package com.design.test;
+package com.design.strategy;
 
-import com.design.strategy.*;
+public class quackNoWay implements quackable {
 
-public class test_duck {
+	public void quack() {
+		System.out.println("quackNoWay");
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		greenDuck duck = new greenDuck();
-		duck.peformFly();
-		duck.peformQuack();
-		duck.display();
 	}
 
 }
