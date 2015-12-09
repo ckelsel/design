@@ -4,17 +4,17 @@ public class greenDuck extends duck {
 	quackable mquack = new quackSlient();
 	flyable mfly = new flyWithWing();
 	
-	void display() {
+	public void display() {
 		System.out.println("i am a greenDuck");
 
 	}
 	
-	void peformQuack() {
+	public void peformQuack() {
 		mquack.quack();
 	}
 	
 
-	void peformFly() {
+	public void peformFly() {
 		mfly.fly();
 	}
 }

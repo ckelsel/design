@@ -1,4 +1,6 @@
-package com.design.duck;
+package com.design.test;
+
+import com.design.duck.*;
 
 public class test_duck {
 
