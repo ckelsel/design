@@ -15,14 +15,22 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package com.design.decorator.solution1;
+package com.design.decorator.mine;
 
-public class Espresso extends Beverage {
+import com.design.decorator.solution1.Beverage;
+
+public class Soy extends Beverage {
+	private Beverage beverage;
+	
+	public Soy(Beverage beverage) {
+		this.beverage = beverage;
+	}
+	
 	public String getDescprition() {
-		return "Espresso";
+		return beverage.getDescprition() + " Soy";
 	}
 	
 	public double cost() {
-		return 2.3f;
+		return beverage.cost() + 2.3f;
 	}
 }

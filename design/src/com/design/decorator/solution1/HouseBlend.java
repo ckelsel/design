@@ -18,6 +18,10 @@
 package com.design.decorator.solution1;
 
 public class HouseBlend extends Beverage {
+	public String getDescprition() {
+		return "HouseBlend";
+	}
+	
 	public double cost() {
 		return 1.2f;
 	}

@@ -18,6 +18,10 @@
 package com.design.decorator.solution1;
 
 public class Decaf extends Beverage {
+	public String getDescprition() {
+		return "Decaf";
+	}
+	
 	public double cost() {
 		return 1.3f;
 	}

@@ -19,5 +19,11 @@
 package com.design.decorator.solution1;
 
 public class DarkRoast extends Beverage {
-
+	public String getDescprition() {
+		return "DarkRoast";
+	}
+	
+	public double cost() {
+		return 2.3f;
+	}
 }

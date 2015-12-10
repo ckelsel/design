@@ -1,0 +1,8 @@
+1. 没有指定程序必须实现哪些接口，而是由程序员选择实现,如下程序
+
+public Mocha extends Beverage {
+	public Mocha(Beverage beverage) {
+	}
+}
+
+2. 为什么不是让饮料add调料, 那就要记录多个调料?

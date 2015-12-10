@@ -15,14 +15,23 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package com.design.decorator.solution1;
+package com.design.decorator.mine;
 
-public class Espresso extends Beverage {
-	public String getDescprition() {
-		return "Espresso";
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import com.design.decorator.solution1.Beverage;
+import com.design.decorator.solution1.DarkRoast;
+
+public class DecoratorTest {
+
+	@Test
+	public void test() {
+		Beverage dorkRoast = new DarkRoast();
+		
+		dorkRoast = new Soy(dorkRoast);
+		System.out.println(dorkRoast.getDescprition() + ": " + dorkRoast.cost());
 	}
-	
-	public double cost() {
-		return 2.3f;
-	}
+
 }
