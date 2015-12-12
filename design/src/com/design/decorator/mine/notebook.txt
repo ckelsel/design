@@ -6,3 +6,7 @@ public Mocha extends Beverage {
 }
 
 2. 为什么不是让饮料add调料, 那就要记录多个调料?
+1）调料为糖，如果再加上其他调料牛奶，则饮料的内部需要维护糖和牛奶，但是使用糖或者牛奶，就需要在修改饮料的代码
+
+3. UML
+https://en.wikipedia.org/wiki/Decorator_pattern
