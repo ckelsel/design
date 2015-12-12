@@ -17,26 +17,21 @@
  */
 package com.design.decorator;
 
-import static org.junit.Assert.*;
+public class Mocha extends CondimentDecorator {
+	Beverage mBeverage;
+	
+	public Mocha(Beverage beverage) {
+		mBeverage = beverage;
+	}
+	
+	@Override
+	public String getDescprition() {
+		return mBeverage.getDescprition() + " Mocha";
+	}
 
-import org.junit.Test;
-
-public class DecoratorTest {
-
-	@Test
-	public void test() {
-		Beverage coffee = new DarkRoast();
-		System.out.println(coffee.getDescprition() + ": " + coffee.cost());
-		
-		coffee = new Soy(coffee);
-		System.out.println(coffee.getDescprition() + ": " + coffee.cost());
-		
-		coffee = new Soy(coffee);
-		System.out.println(coffee.getDescprition() + ": " + coffee.cost());
-		
-		coffee = new Mocha(coffee);
-		System.out.println(coffee.getDescprition() + ": " + coffee.cost());
-		
+	@Override
+	public double cost() {
+		return mBeverage.cost() + 1.2f;
 	}
 
 }
