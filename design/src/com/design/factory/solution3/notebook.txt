@@ -1,0 +1,13 @@
+每个Pizza店的流程不一样
+A)
+pizza.prepare();
+pizza.back();
+pizza.cut();
+pizza.box();
+return pizza;
+
+B)
+pizza.prepare();
+pizza.back();
+pizza.box();
+return pizza;

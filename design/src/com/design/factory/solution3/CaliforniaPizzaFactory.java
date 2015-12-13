@@ -15,27 +15,29 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package com.design.factory.solution2;
+package com.design.factory.solution3;
 
+import com.design.factory.solution1.CheesePizza;
+import com.design.factory.solution1.ClamPizza;
+import com.design.factory.solution1.GreekPizza;
 import com.design.factory.solution1.Pizza;
+import com.design.factory.solution1.VeggiePizza;
+import com.design.factory.solution2.SimplePizzaFactory;
 
-public class PizzaStore {
-	SimplePizzaFactory mFactory;
-	
-	public PizzaStore(SimplePizzaFactory factory) {
-		mFactory = factory;
-	}
-	
-	public Pizza orderPizza(String type) {
-		Pizza pizza;
+public class CaliforniaPizzaFactory extends SimplePizzaFactory {
+	public static Pizza createPizza(String type) {
+		Pizza pizza = null;
 		
-		pizza = mFactory.createPizza(type);
+		if (type.equals("cheese")) {
+			pizza = new CheesePizza();
+		} else if (type.equals("greek")) {
+			pizza = new GreekPizza();
+		} else if (type.equals("clam")) {
+			pizza = new ClamPizza();
+		} else if (type.equals("vegggie")) {
+			pizza = new VeggiePizza();
+		}
 		
-
-		pizza.prepare();
-		pizza.back();
-		pizza.cut();
-		pizza.box();
 		return pizza;
 	}
 }
