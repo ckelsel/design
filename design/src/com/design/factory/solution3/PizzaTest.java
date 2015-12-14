@@ -20,4 +20,10 @@ public class PizzaTest {
 		PizzaStore store = new PizzaStore(new NYPizzaFactory());
 		Pizza pizza = store.orderPizza("clam");
 	}
+	
+	@Test
+	public void testNYPizzaStore() {
+		NYPizzaStore store = new NYPizzaStore(new NYPizzaFactory());
+		Pizza pizza = store.orderPizza("clam");
+	}
 }
