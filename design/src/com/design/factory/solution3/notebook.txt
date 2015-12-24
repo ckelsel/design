@@ -14,3 +14,10 @@ return pizza;
 
 
 ## orderPizza() of NYPizzaStore and PizzaStore is different, but we want it to be same
+
+## all pizzaStore must follow same workfolow, but it can modify some workflow, such as cut()
+pizza.prepare();
+pizza.back();
+pizza.cut();
+pizza.box();
+return pizza;
