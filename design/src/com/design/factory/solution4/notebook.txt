@@ -1,0 +1,4 @@
+each XX_PizzaStore must implements PizzaStore, and support their createPizza()
+
+
+每个不同的createPizza必须实现createPizza的createPizza（）方法，实现自己独特的Pizza，
