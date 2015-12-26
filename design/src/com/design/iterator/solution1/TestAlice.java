@@ -15,28 +15,18 @@
  * with this program; if not, write to the Free Software Foundation, Inc.,
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
-package com.design.iterator.problem;
+package com.design.iterator.solution1;
 
-import java.util.ArrayList;
+import static org.junit.Assert.*;
 
-public class Alice {
-	public void printMenu() {
-		PancakeHouseMenu menu1 = new PancakeHouseMenu();
-		ArrayList list = menu1.getMenuItems();
-		for (int i = 0; i < list.size(); ++i) {
-			MenuItem item = (MenuItem) list.get(i);
-			System.out.println("name: " + item.getName());
-			System.out.println("description: " + item.getDescription());
-			System.out.println("price: " + item.getPrice());
-		}
-		
-		DinerMenu menu2 = new DinerMenu();
-		MenuItem[] list2 = menu2.getMenuItems();
-		for (int i = 0; i < list2.length; ++i) {
-			MenuItem item = list2[i];
-			System.out.println("name: " + item.getName());
-			System.out.println("description: " + item.getDescription());
-			System.out.println("price: " + item.getPrice());
-		}
+import org.junit.Test;
+
+public class TestAlice {
+
+	@Test
+	public void test() {
+		Alice alice = new Alice();
+		alice.printMenu();
 	}
+
 }
