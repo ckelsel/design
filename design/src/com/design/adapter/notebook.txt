@@ -1,0 +1,22 @@
+// make Turkey as Duck
+public class TurkeyAdapter implements Duck {
+	Turkey mTurkey;
+	
+	public TurkeyAdapter(Turkey turkey) {
+		mTurkey = turkey;
+	}
+}
+
+
+public class TurkeyAdapter2 implements Duck {
+	Turkey mTurkey;
+	
+	public TurkeyAdapter() {
+	}
+	
+	public setTurkey(Turkey turkey) {
+		mTurkey = turkey;
+	}
+}
+
+how to add a turkey is depend on designer
