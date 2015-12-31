@@ -17,8 +17,13 @@
  */
 package com.design.state;
 
-public class WinnerState implements state {
-
+public class WinnerState implements State {
+	GumballMachine mGumballMachine;
+	
+	WinnerState(GumballMachine machine) {
+		mGumballMachine = machine;
+	}
+		
 	public void insertQuarter() {
 		// TODO 自动生成的方法存根
 		

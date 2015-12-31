@@ -17,7 +17,7 @@
  */
 package com.design.state;
 
-public interface state {
+public interface State {
 	void insertQuarter();
 	
 	void ejectQuarter();

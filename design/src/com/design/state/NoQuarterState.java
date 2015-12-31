@@ -17,26 +17,28 @@
  */
 package com.design.state;
 
-public class NoQuarterState implements state {
+public class NoQuarterState implements State {
+	GumballMachine mGumballMachine;
+	
+	NoQuarterState(GumballMachine machine) {
+		mGumballMachine = machine;
+	}
 
 	public void insertQuarter() {
-		// TODO 自动生成的方法存根
-		
+		System.out.println("NoQuarterState insertQuarter");
+		mGumballMachine.setState(mGumballMachine.getmHasQuarterState());
 	}
 
 	public void ejectQuarter() {
-		// TODO 自动生成的方法存根
-		
+		System.out.println("NoQuarterState ejectQuarter ignore...");
 	}
 
 	public void turnCrank() {
-		// TODO 自动生成的方法存根
-		
+		System.out.println("NoQuarterState turnCrank ignore...");
 	}
 
 	public void dispense() {
-		// TODO 自动生成的方法存根
-		
+		System.out.println("NoQuarterState dispense ignore...");
 	}
 
 }
