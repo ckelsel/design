@@ -60,12 +60,9 @@ public class GumballMachine {
 	}
 	
 	public void decreaseCount() {
+		System.out.println("drop a gumball");
 		if (mCount > 0) {
 			mCount--;
-			setState(mNoQuarterState);
-		} else {
-			mHasQuarterState.ejectQuarter();
-			setState(mSoldOutState);
 		}
 	}
 

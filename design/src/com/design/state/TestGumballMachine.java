@@ -9,7 +9,7 @@ public class TestGumballMachine {
 	@Test
 	public void test() {
 		System.out.println("test:");
-		GumballMachine m = new GumballMachine(3);
+		GumballMachine m = new GumballMachine(0);
 		m.insertQuarter();
 		m.ejectQuarter();
 		m.turnCrank();
@@ -21,6 +21,14 @@ public class TestGumballMachine {
 		GumballMachine m = new GumballMachine(3);
 		m.insertQuarter();
 		m.turnCrank();
+
+		m.insertQuarter();
+		m.turnCrank();
+		
+		m.insertQuarter();
+		m.turnCrank();
+		
+		m.insertQuarter();
 		m.turnCrank();
 	}
 }
